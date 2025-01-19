@@ -49,3 +49,5 @@ let tl = gsap.timeline();
  -pin : pin the page while animating elements
  ** note: while using pin property make sure trigger must be parent element
  */
+
+ 
