@@ -1,0 +1,33 @@
+#page1,#page2,#page3{
+    height: 100vh;
+    width: 100vw;
+    background-color: #111;
+    padding: 0 2vw;
+}
+
+
+#move{
+    background-color: #d8ff04;
+    display: flex;
+    padding: 3vw 0;
+    overflow: hidden;
+}
+
+.marque img{
+    height: 4vw;
+}
+
+.marque{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    padding: 0 1.5vw;
+    flex-shrink: 0;
+    transform: translateX(-100%);
+}
+
+.marque h1{
+    font-size: 4vw;
+    font-family: cursive;
+}
