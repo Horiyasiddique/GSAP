@@ -1,26 +1,30 @@
-gsap.from("#page1 h1",{
-    y: 100,
-    duration: 2,
-    delay:0.45,
-    opacity: 0,
-    stagger: 1,
-    scrollTrigger:{
-        trigger: "#page1 h1",
-        scroller: "body",
-        
-
-    }
+// ************* SCROLL TRIGGER ****************
+gsap.from('.page1 .box', {
+    duration: 0.7,
+    delay: 1,
+    rotate: 360
 })
-
-gsap.to("#page2 h1",{
-    transform: "translateX(-150%)",
+gsap.from('.page2 .box', {
+    scale: 0,
+    duration: 0.7,
+   scrollTrigger: {
+    trigger: '.page2 .box',
+    scroller: 'body',
+    markers: true,
+    start: 'top 67%',
+    scrub: 2, //scrub is used for smoothness and completely depend on scrolling
+   }
+   
+})
+gsap.from('.page3 .box', {
+    x: 400,
+    duration: 0.7,
+    delay: 1,
     scrollTrigger: {
-        trigger: "#page2 h1",
-        scroller: "body",
+        trigger: '.page3 .box',
+        scroller: 'body',
         markers: true,
-        start: "top 0%",
-        end: "top -150%",
-        scrub: 2,
-        pin: true
-    }
+        start: 'top 67%'
+       }
+   
 })
