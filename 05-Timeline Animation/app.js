@@ -9,22 +9,20 @@ tl.to("#full",{
 
 tl.from("#full h4" , {
     x: 150,
-    duration:0.6,
+    duration:0.7,
     stagger: 0.3,
     opacity: 1,
 })
 
-tl.from("#full i" , {
-    opacity: 0,
-    
+tl.from('#full i', {
+    opacity: 0
 })
 
-tl.pause()
-
-menu.addEventListener("click",()=>{
+tl.pause();
+menu.addEventListener('click', ()=>{
     tl.play()
 })
 
-close.addEventListener("click",()=>{
+close.addEventListener('click', () => {
     tl.reverse()
 })
